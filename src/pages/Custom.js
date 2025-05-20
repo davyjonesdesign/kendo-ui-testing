@@ -1,13 +1,16 @@
 import React from 'react';
+import BackButton from '../components/BackButton'; // adjust path if needed
+import DocumentationButton from '../components/DocumentationButton';
 import { Card, CardHeader, CardTitle, CardSubtitle } from '@progress/kendo-react-layout';
 
 const Custom = () => {
 
   return (
     <div className="page-wrapper">
-        <div className='page-header'>
-            <h2>Custom Components</h2>
-            <a href="https://docs.telerik.com/themebuilder/using-exported-styles/exported-package#using-the-custom-components-output" alt="Custom component documentation - KendoReact" target="_blank" rel="noreferrer">Custom component documentation - KendoReact</a> 
+        <div className="page-header">
+          <BackButton />
+          <h2>Custom Components</h2>
+          <DocumentationButton rl="https://docs.telerik.com/themebuilder/using-exported-styles/exported-package#using-the-custom-components-output" />
         </div>
           
         <section>

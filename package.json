@@ -5,6 +5,7 @@
   "dependencies": {
     "@progress/kendo-data-query": "^1.7.1",
     "@progress/kendo-drawing": "^1.21.2",
+    "@progress/kendo-font-icons": "^4.3.0",
     "@progress/kendo-licensing": "^1.5.1",
     "@progress/kendo-react-animation": "^10.2.0",
     "@progress/kendo-react-buttons": "^10.2.0",
@@ -53,13 +54,13 @@
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^14.6.1",
+    "kendo-ui-testing": "file:./w-kendo-theme",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.6.0",
     "react-scripts": "5.0.1",
     "react-syntax-highlighter": "^15.6.1",
-    "web-vitals": "^3.5.2",
-    "kendo-ui-testing": "file:./w-kendo-theme"
+    "web-vitals": "^3.5.2"
   },
   "scripts": {
     "start": "react-scripts start",

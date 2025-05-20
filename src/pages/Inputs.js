@@ -1,4 +1,6 @@
 import React from 'react';
+import BackButton from '../components/BackButton'; // adjust path if needed
+import DocumentationButton from '../components/DocumentationButton';
 import { MultiSelect } from "@progress/kendo-react-dropdowns";
 import { Button } from "@progress/kendo-react-buttons";
 import { InputClearValue, InputSeparator, InputSuffix, TextBox } from '@progress/kendo-react-inputs';
@@ -37,9 +39,10 @@ const Inputs = () => {
     }, []);
     return (
         <div className="page-wrapper">
-            <div className='page-header'>
+            <div className="page-header">
+                <BackButton />
                 <h2>Inputs</h2>
-                <a href="https://www.telerik.com/kendo-react-ui/components/inputs" alt="Custom component documentation - KendoReact" target="_blank" rel="noreferrer">Inputs - KendoReact</a>
+                <DocumentationButton rl="https://www.telerik.com/kendo-react-ui/components/inputs" />
             </div>
 
             <section>

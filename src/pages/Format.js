@@ -10,7 +10,7 @@ const Format = () => {
         <Link to="/w-calendar-inline">w-calendar-inline</Link>
         <Link to="/dialogs">Dialogs</Link>
         <Link to="/inputs">Inputs</Link>
-        <Link to="/layout">Layout</Link>
+        <Link to="/tabstrip">TabStrip</Link>
         <Link to="/custom">Custom</Link>
       </nav>
       <main>

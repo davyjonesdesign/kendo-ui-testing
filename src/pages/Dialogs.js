@@ -1,4 +1,6 @@
 import React from 'react';
+import BackButton from '../components/BackButton'; // adjust path if needed
+import DocumentationButton from '../components/DocumentationButton';
 import { Button } from '@progress/kendo-react-buttons';
 import { Dialog, DialogActionsBar } from '@progress/kendo-react-dialogs';
 
@@ -20,8 +22,11 @@ const Dialogs = () => {
   
   return (
     <div className="page-wrapper">
-      <h2>Dialogs</h2>
-      <hr />
+      <div className="page-header">
+          <BackButton />
+          <h2>Dialogs</h2>
+          <DocumentationButton rl="https://www.telerik.com/kendo-react-ui/components/dialogs" />
+        </div>
 
       <div className="ui-container">
         

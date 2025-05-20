@@ -1,14 +1,17 @@
 import React from 'react';
+import BackButton from '../components/BackButton'; // adjust path if needed
+import DocumentationButton from '../components/DocumentationButton';
 import { Button, ButtonGroup } from '@progress/kendo-react-buttons';
 
 const Buttons = () => {
 
   return (
     <div className="page-wrapper">
-      <div className='page-header'>
-        <h2>Buttons</h2>
-        <a href="https://www.telerik.com/kendo-react-ui/components/buttons/button" alt="Button documentation - KendoReact" target="_blank" rel="noreferrer">Button documentation - KendoReact</a> 
-      </div>
+      <div className="page-header">
+          <BackButton />
+          <h2>Buttons</h2>
+          <DocumentationButton rl="https://www.telerik.com/kendo-react-ui/components/buttons" />
+        </div>
       
       <section>
         <h3>Button</h3>
