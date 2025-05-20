@@ -1,5 +1,6 @@
 {
   "name": "kendo-ui-testing",
+  "homepage": "https://davyjonesdeisng.github.io/kendo-ui-testing",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -54,6 +55,7 @@
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^14.6.1",
+    "gh-pages": "^6.3.0",
     "kendo-ui-testing": "file:./w-kendo-theme",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
