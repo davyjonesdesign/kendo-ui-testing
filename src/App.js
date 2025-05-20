@@ -1,29 +1,32 @@
 import React from 'react';
-import { Button } from '@progress/kendo-react-buttons';
-import kendoka from './kendoka.svg';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Format from "./pages/Format";
+import Buttons from "./pages/Buttons";
+import CalendarInline from "./pages/w-calendar-inline";
+import Inputs from "./pages/Inputs";
+import Layout from "./pages/Layout";
+import Dialogs from "./pages/Dialogs";
+import Custom from "./pages/Custom";
+import NoPage from "./pages/NoPage"; // Make sure this exists
 import './App.scss';
 
 function App() {
-  const handleClick = React.useCallback(() => {
-    window.open('https://www.telerik.com/kendo-react-ui/components/', '_blank');
-  }, []);
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={kendoka} className="App-logo" alt="kendoka" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <Button
-          themeColor={'primary'}
-          size={"large"}
-          onClick={handleClick}
-        >
-          Learn KendoReact
-        </Button>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Format />}>
+          <Route index element={<Home />} />
+          <Route path="buttons" element={<Buttons />} />
+          <Route path="w-calendar-inline" element={<CalendarInline />} />
+          <Route path="inputs" element={<Inputs />} />
+          <Route path="layout" element={<Layout />} />
+          <Route path="dialogs" element={<Dialogs />} />
+          <Route path="custom" element={<Custom />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

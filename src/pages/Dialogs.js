@@ -1,0 +1,83 @@
+import React from 'react';
+import { Button } from '@progress/kendo-react-buttons';
+import { Dialog, DialogActionsBar } from '@progress/kendo-react-dialogs';
+
+const StatusTitleBar = () => {
+  return (
+      <div className="w-dialog-titlebar-status w-dialog-titlebar-error">
+          <span className="k-icon k-font-icon k-i-star" role="presentation"></span>
+      </div>
+  );
+};
+
+const Dialogs = () => {
+  const [visible, setVisible] = React.useState(false);
+
+  const toggleDialog = () => {
+    setVisible(!visible);
+  };
+
+  
+  return (
+    <div className="page-wrapper">
+      <h2>Dialogs</h2>
+      <hr />
+
+      <div className="ui-container">
+        
+        {/* UI Items */}
+        <div className="ui-item">
+          <h6 className="strong">Status Dialog</h6>
+          <Button
+            themeColor="primary"
+            rounded="full"
+            fillMode="link"
+            size="medium"
+            onClick={toggleDialog}
+          >
+            Open Status Dialog
+          </Button>
+
+          {visible && (
+            <Dialog title={<StatusTitleBar />} onClose={toggleDialog} className='w-dialog-status w-dialog-error'>
+              
+              <p>Are you sure you want to continue?</p>
+              <DialogActionsBar>
+                <Button
+                  type="button"
+                  onClick={toggleDialog}
+                  themeColor="primary"
+                  rounded="full"
+                  fillMode="outline"
+                  size="large"
+                >
+                  No, cancel
+                </Button>
+                <Button
+                  type="button"
+                  onClick={toggleDialog}
+                  themeColor="primary"
+                  rounded="full"
+                  fillMode="solid"
+                  size="large"
+                >
+                  Yes, confirm
+                </Button>
+              </DialogActionsBar>
+            </Dialog>
+          )}
+          <p className="w-p-code">
+            <span>w-dialog-status</span>
+            <span>w-dialog-titlebar-status</span>
+          </p>
+        </div>
+
+        
+      </div>
+
+      
+    </div>
+  );
+};
+
+export default Dialogs;
