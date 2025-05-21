@@ -2,6 +2,8 @@ import React from 'react';
 import BackButton from '../components/BackButton'; // adjust path if needed
 import DocumentationButton from '../components/DocumentationButton';
 import { Button, ButtonGroup } from '@progress/kendo-react-buttons';
+import CodeViewer from '../components/CodeViewer';
+
 
 const Buttons = () => {
 
@@ -15,66 +17,51 @@ const Buttons = () => {
       
       <section>
         <h3>Button</h3>
-        <p className="w-p-code">
-          <span>themeColor = primary</span>
-          <span>rounder = full</span>
-        </p>
+
         <div className="ui-container">
           {/* UI Items */}
           <div className="ui-item">
-            <h6 className="strong">Large & Solid</h6>
+            <h6 className="strong">Large Solid</h6>
             <Button
               themeColor="primary"
               rounded="full"
               fillMode="solid"
               size="large"
-              disabled={true}
-              
             >
-              Open Dialog
+              Button Label
             </Button>
-            <p className="w-p-code">
-              <span>fillMode = solid</span>
-              <span>size = large</span>
-            </p>
+            <CodeViewer filePath="/kendo-ui-testing/code/w-button-large-solid.js"  useLight={true} />
           </div>
 
+          {/* UI Items */}
           <div className="ui-item">
-            <h6 className="strong">Large & Outline</h6>
+            <h6 className="strong">Large Outline</h6>
             <Button
               themeColor="primary"
               rounded="full"
               fillMode="outline"
               size="large"
-              
             >
-              Open Dialog
+              Button Label
             </Button>
-            <p className="w-p-code">
-              <span>fillMode = outline</span>
-              <span>size = large</span>
-            </p>
+            <CodeViewer filePath="/kendo-ui-testing/code/w-button-large-outline.js"  useLight={true} />
           </div>
 
           <div className="ui-item">
-            <h6 className="strong">Large & Link</h6>
+            <h6 className="strong">Large Link</h6>
             <Button
               themeColor="primary"
               rounded="full"
               fillMode="link"
-              size="large"
-              
+              size="large"              
             >
-              Open Dialog
+              Button Label
             </Button>
-            <p className="w-p-code">
-              <span>fillMode = link</span>
-              <span>size = large</span>
-            </p>
+            <CodeViewer filePath="/kendo-ui-testing/code/w-button-large-link.js"  useLight={true} />
           </div>
 
           <div className="ui-item">
-            <h6 className="strong">Medium & Solid</h6>
+            <h6 className="strong">Medium Solid</h6>
             <Button
               themeColor="primary"
               rounded="full"
@@ -82,16 +69,13 @@ const Buttons = () => {
               size="medium"
               
             >
-              Open Dialog
+              Button Label
             </Button>
-            <p className="w-p-code">
-              <span>fillMode = solid</span>
-              <span>size = medium</span>
-            </p>
+            <CodeViewer filePath="/kendo-ui-testing/code/w-button-medium-solid.js"  useLight={true} />
           </div>
 
           <div className="ui-item">
-            <h6 className="strong">Medium & Outline</h6>
+            <h6 className="strong">Medium Outline</h6>
             <Button
               themeColor="primary"
               rounded="full"
@@ -99,16 +83,13 @@ const Buttons = () => {
               size="medium"
               
             >
-              Open Dialog
+              Button Label
             </Button>
-            <p className="w-p-code">
-              <span>fillMode = outline</span>
-              <span>size = medium</span>
-            </p>
+            <CodeViewer filePath="/kendo-ui-testing/code/w-button-medium-outline.js"  useLight={true} />
           </div>
 
           <div className="ui-item">
-            <h6 className="strong">Medium & Link</h6>
+            <h6 className="strong">Medium Link</h6>
             <Button
               themeColor="primary"
               rounded="full"
@@ -116,53 +97,35 @@ const Buttons = () => {
               size="medium"
               
             >
-              Open Dialog
+              Button Label
             </Button>
-            <p className="w-p-code">
-              <span>fillMode = link</span>
-              <span>size = medium</span>
-            </p>
+            <CodeViewer filePath="/kendo-ui-testing/code/w-button-medium-link.js"  useLight={true} />
           </div>
         </div>
       </section>
       <section>
         <h3>ButtonGroup</h3>
-          <p className="w-p-code">
-            <span>themeColor = primary</span>
-            <span>rounder = full</span>
-          </p>
       
           <div className="ui-container">
-
             {/* UI Items */}
             <div className="ui-item">
-              <h6 className="strong">Medium & Solid</h6>
+              <h6 className="strong">Medium Solid</h6>
               <ButtonGroup>
                   <Button
                     themeColor="primary"
                     rounded="full"
-                  >
-                      First
-                  </Button>
+                  >First</Button>
                   <Button
                     themeColor="primary"
                     rounded="full"
-                  >
-                      Middle
-                  </Button>
+                  >Middle</Button>
                   <Button
                     themeColor="primary"
                     rounded="full"
-                  >
-                      Last
-                  </Button>
+                  >Last</Button>
               </ButtonGroup>
-              <p className="w-p-code">
-              <span>fillMode = solid</span>
-              <span>size = medium</span>
-                Apply classnames directly to the Buttons.
-                
-              </p>
+              <CodeViewer filePath="/kendo-ui-testing/code/w-buttonGroup-medium-solid.js"  useLight={true} />
+
             </div>
 
              {/* UI Items */}
@@ -174,31 +137,21 @@ const Buttons = () => {
                     rounded="full"
                     fillMode="outline"
                     size="medium"
-                  >
-                    First
-                  </Button>
+                  >First</Button>
                   <Button
                     themeColor="primary"
                     rounded="full"
                     fillMode="outline"
                     size="medium"
-                  >
-                    Middle
-                  </Button>
+                  >Middle</Button>
                   <Button
                     themeColor="primary"
                     rounded="full"
                     fillMode="outline"
                     size="medium"
-                  >
-                    Last
-                  </Button>
+                  >Last</Button>
               </ButtonGroup>
-              <p className="w-p-code">
-                <span>fillMode = outline</span>
-                <span>size = medium</span>
-                Apply classnames directly to the Buttons.
-              </p>
+               <CodeViewer filePath="/kendo-ui-testing/code/w-buttonGroup-medium-outline.js"  useLight={true} />
             </div>
 
             {/* UI Items */}
@@ -210,31 +163,21 @@ const Buttons = () => {
                     rounded="full"
                     fillMode="flat"
                     size="medium"
-                  >
-                    First
-                  </Button>
+                  >First</Button>
                   <Button
                     themeColor="primary"
                     rounded="full"
                     fillMode="flat"
                     size="medium"
-                  >
-                    Middle
-                  </Button>
+                  >Middle</Button>
                   <Button
                     themeColor="primary"
                     rounded="full"
                     fillMode="flat"
                     size="medium"
-                  >
-                    Last
-                  </Button>
+                  >Last</Button>
               </ButtonGroup>
-              <p className="w-p-code">
-                <span>fillMode = flat</span>
-                <span>size = medium</span>
-                Apply classnames directly to the Buttons.
-              </p>
+               <CodeViewer filePath="/kendo-ui-testing/code/w-buttonGroup-medium-flat.js"  useLight={true} />
             </div>
 
           </div>

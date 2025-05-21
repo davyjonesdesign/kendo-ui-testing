@@ -17,10 +17,11 @@ const CalendarInline = () => {
         </div>
 
 
-        <MultiViewCalendar className='w-calendar-inline' views={1} />
+        <section>
+          <MultiViewCalendar className='w-calendar-inline' views={1} />
 
-        <h3>Source Code</h3>
-        <CodeViewer filePath="/code/w-calendar-inline.js"  useLight={true} />
+          <CodeViewer filePath="/kendo-ui-testing/code/w-calendar-inline.js"  useLight={true} />
+        </section>
       </div>
   );
 };

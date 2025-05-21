@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { Button } from '@progress/kendo-react-buttons';
+
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { materialDark, oneLight } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
@@ -26,24 +28,18 @@ const CodeViewer = ({ filePath, language = 'javascript', useLight = false }) => 
   if (error) return <div style={{ color: 'red' }}>Error: {error}</div>;
 
   return (
-    <div style={{ position: 'relative', marginTop: '1.5rem' }}>
-      <button
-        onClick={handleCopy}
-        style={{
-          position: 'absolute',
-          right: '0.5rem',
-          top: '0.5rem',
-          zIndex: 1,
-          padding: '4px 8px',
-          fontSize: '0.8rem',
-          background: '#f0f0f0',
-          border: '1px solid #ccc',
-          borderRadius: '4px',
-          cursor: 'pointer',
-        }}
-      >
-        {copied ? 'Copied!' : 'Copy'}
-      </button>
+    <div className='codeViewer'>
+      <div className='codeViewer-header'>
+        <h5>Source Code</h5>
+        <Button
+          onClick={handleCopy}
+          themeColor="primary"
+          rounded="full"
+          fillMode="outline"
+          size="medium" >
+          {copied ? 'Copied!' : 'Copy'}
+        </Button>
+      </div>
       <SyntaxHighlighter
         language={language}
         style={useLight ? oneLight : materialDark}
