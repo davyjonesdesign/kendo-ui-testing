@@ -8,7 +8,8 @@ const DocumentationButton = ({ url }) => {
   };
 
   return (
-    <Button
+    <div className='header-btn doc-btn'>
+      <Button
       icon="replace-single"
       themeColor="primary"
       rounded="full"
@@ -19,6 +20,7 @@ const DocumentationButton = ({ url }) => {
     >
       Documentation
     </Button>
+    </div>
   );
 };
 

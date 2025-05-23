@@ -1,4 +1,3 @@
-import React from 'react';
 import BackButton from '../components/BackButton'; // adjust path if needed
 import DocumentationButton from '../components/DocumentationButton';
 import { Button, ButtonGroup } from '@progress/kendo-react-buttons';

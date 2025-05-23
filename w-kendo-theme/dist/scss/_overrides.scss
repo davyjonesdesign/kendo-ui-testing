@@ -2908,10 +2908,10 @@
         
 }
     .k-chip.k-chip-md{
-                    @extend %tb-typography-figma-typography-h-6-600;
+                    @extend %tb-typography-fig-h6-heavy;
           padding-bottom: 0px;
-            padding-left: $tb-figma-spacing-10;
-            padding-right: $tb-figma-spacing-10;
+            padding-left: 5px;
+            padding-right: 5px;
             padding-top: 0px;
         
 }
@@ -2991,8 +2991,8 @@
             border-right-color: $tb-figma-neutral-dark-2;
             border-top-color: $tb-figma-neutral-dark-2;
             color: $tb-figma-background;
-            background-color: initial;
-            background-image: none;
+            background-color: $tb-figma-background;
+            background-image: linear-gradient($tb-figma-primary, $tb-figma-primary);
         
 }
     .k-chip.k-chip-outline.k-disabled.k-chip-outline-base,.k-chip.k-chip-outline.k-state-disabled.k-chip-outline-base,.k-chip.k-chip-outline:disabled.k-chip-outline-base{
@@ -3000,12 +3000,20 @@
         
 }
     .k-chip.k-chip-outline.k-disabled,.k-chip.k-chip-outline.k-state-disabled,.k-chip.k-chip-outline:disabled{
-    outline-style: none;
+    outline-style: solid;
             outline-width: 1px;
-            outline-offset: 0px;
+            outline-offset: -1px;
             outline-color: $tb-figma-neutral-light;
-            background-color: $tb-figma-neutral-dark;
-            background-image: none;
+            border-bottom-color: $tb-figma-neutral-light;
+            border-left-color: $tb-figma-neutral-light;
+            border-right-color: $tb-figma-neutral-light;
+            border-top-color: $tb-figma-neutral-light;
+            background-color: $tb-figma-background;
+            background-image: linear-gradient($tb-figma-neutral-light-2, $tb-figma-neutral-light-2);
+            border-bottom-width: 1px;
+            border-left-width: 1px;
+            border-right-width: 1px;
+            border-top-width: 1px;
         
 }
     .k-datepicker.k-input.k-hover .k-button.k-button-md.k-button-solid.k-button-solid-base.k-icon-button.k-input-button,.k-datepicker.k-input.k-state-hover .k-button.k-button-md.k-button-solid.k-button-solid-base.k-icon-button.k-input-button,.k-datepicker.k-input.k-state-hovered .k-button.k-button-md.k-button-solid.k-button-solid-base.k-icon-button.k-input-button,.k-datepicker.k-input:hover .k-button.k-button-md.k-button-solid.k-button-solid-base.k-icon-button.k-input-button{
@@ -3148,15 +3156,17 @@
         
 }
     .k-chip.k-chip-outline.k-focus,.k-chip.k-chip-outline.k-state-focus,.k-chip.k-chip-outline.k-state-focused,.k-chip.k-chip-outline:focus{
-    outline-style: none;
-            border-bottom-color: $tb-figma-primary;
-            border-left-color: $tb-figma-primary;
-            border-right-color: $tb-figma-primary;
-            border-top-color: $tb-figma-primary;
-            outline-color: $tb-figma-primary-light-2;
+    outline-style: solid;
+            border-bottom-color: $tb-figma-neutral-dark-2;
+            border-left-color: $tb-figma-neutral-dark-2;
+            border-right-color: $tb-figma-neutral-dark-2;
+            border-top-color: $tb-figma-neutral-dark-2;
+            outline-color: $tb-figma-primary-light;
             outline-width: 1px;
-            outline-offset: -2.25px;
+            outline-offset: 0px;
             color: $tb-figma-background;
+            background-color: $tb-figma-background;
+            background-image: linear-gradient($tb-figma-primary, $tb-figma-primary);
         
 }
     .k-pager .k-pager-sizes .k-dropdownlist .k-input-inner{
@@ -3343,17 +3353,17 @@
             outline-offset: 0px;
             outline-style: none;
             outline-width: 1px;
-            border-bottom-style: none;
-            border-left-style: none;
-            border-right-style: none;
-            border-top-style: none;
+            border-bottom-style: solid;
+            border-left-style: solid;
+            border-right-style: solid;
+            border-top-style: solid;
             background-image: none;
-            padding-left: 0px;
-            padding-right: 0px;
-            border-bottom-left-radius: 0px;
-            border-bottom-right-radius: 0px;
-            border-top-left-radius: 0px;
-            border-top-right-radius: 0px;
+            padding-left: 5px;
+            padding-right: 5px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
         
 }
     .k-chip.k-chip-outline.k-chip-outline-base{
@@ -3365,9 +3375,13 @@
             color: $tb-button-outline-content;
         
 }
+    .k-chip.k-chip-outline.k-chip-md{
+                    @extend %tb-typography-fig-h6-medium;
+      
+}
     .k-chip.k-chip-outline.k-disabled .k-chip-content,.k-chip.k-chip-outline.k-state-disabled .k-chip-content,.k-chip.k-chip-outline:disabled .k-chip-content{
     color: $tb-figma-neutral-light;
-            background-color: $tb-figma-neutral-light-2;
+            background-color: initial;
             background-image: none;
             border-bottom-color: $tb-figma-neutral-light;
             border-left-color: $tb-figma-neutral-light;
@@ -3414,9 +3428,10 @@
         
 }
     .k-chip .k-chip-content{
-    height: 25px;
-            padding-right: 0px;
-            padding-left: 0px;
+                    @extend %tb-typography-fig-h6-medium;
+          height: 25px;
+            padding-right: 5px;
+            padding-left: 5px;
             display: flex;
             align-self: center;
             flex-direction: row;
@@ -3515,7 +3530,7 @@
 }
     .k-chip.k-focus,.k-chip.k-state-focus,.k-chip.k-state-focused,.k-chip:focus{
     outline-color: $tb-figma-primary-light;
-            outline-offset: -2px;
+            outline-offset: 0px;
             outline-style: solid;
             outline-width: 1px;
         
@@ -10580,8 +10595,8 @@
     .k-chip .k-chip-actions{
     margin-top: 0px;
             margin-bottom: 0px;
-            margin-right: -5px;
-            margin-left: 2px;
+            margin-right: 0px;
+            margin-left: 0px;
         
 }
     .btn-group-lg.k-button-group .k-button.k-button-flat.k-focus,.btn-group-lg.k-button-group .k-button.k-button-flat.k-state-focus,.btn-group-lg.k-button-group .k-button.k-button-flat.k-state-focused,.btn-group-lg.k-button-group .k-button.k-button-flat:focus{
@@ -10838,7 +10853,7 @@
         
 }
     .k-chip.k-chip-outline.k-focus .k-chip-actions .k-chip-action.k-chip-remove-action .k-icon.k-font-icon.k-i-x-circle,.k-chip.k-chip-outline.k-state-focus .k-chip-actions .k-chip-action.k-chip-remove-action .k-icon.k-font-icon.k-i-x-circle,.k-chip.k-chip-outline.k-state-focused .k-chip-actions .k-chip-action.k-chip-remove-action .k-icon.k-font-icon.k-i-x-circle,.k-chip.k-chip-outline:focus .k-chip-actions .k-chip-action.k-chip-remove-action .k-icon.k-font-icon.k-i-x-circle{
-    color: $tb-button-outline-content;
+    color: $tb-figma-background;
         
 }
     .k-dropdowntree .k-input-button.k-button.k-icon-button .k-button-icon.k-icon.k-font-icon.k-i-caret-alt-down{
@@ -11755,13 +11770,16 @@
 }
     .k-dialog-wrapper .k-window.k-dialog .k-window-titlebar.k-dialog-titlebar .k-window-titlebar-actions.k-dialog-titlebar-actions .k-window-titlebar-action.k-dialog-titlebar-action.k-button.k-button-md.k-button-flat.k-button-flat-base.k-rounded-md.k-icon-button .k-button-icon.k-icon.k-font-icon.k-i-x{
     font-size: 30px;
-            color: $tb-figma-neutral-dark-2;
+            color: $tb-figma-primary;
         
 }
     .k-dialog-wrapper .k-window.k-dialog .k-window-titlebar.k-dialog-titlebar .k-window-titlebar-actions.k-dialog-titlebar-actions .k-window-titlebar-action.k-dialog-titlebar-action.k-button.k-button-md.k-button-flat.k-button-flat-base.k-rounded-md.k-icon-button{
     width: $tb-figma-height-30;
             height: $tb-figma-height-30;
             font-family: DesignIconsFont_1;
+            background-color: $tb-figma-background !important;
+            background-image: none !important;
+            color: $tb-figma-primary;
         
 }
     .k-dialog-wrapper .k-window.k-dialog .k-window-titlebar.k-dialog-titlebar .k-window-title.k-dialog-title{
@@ -12470,8 +12488,6 @@
             border-left-color: $tb-figma-neutral-dark-2;
             border-right-color: $tb-figma-neutral-dark-2;
             border-top-color: $tb-figma-neutral-dark-2;
-            background-color: $tb-figma-primary;
-            background-image: none;
             color: $tb-figma-background;
         
 }
@@ -12728,7 +12744,7 @@
         
 }
     .k-chip.k-chip-outline.k-hover .k-chip-content,.k-chip.k-chip-outline.k-state-hover .k-chip-content,.k-chip.k-chip-outline.k-state-hovered .k-chip-content,.k-chip.k-chip-outline:hover .k-chip-content{
-    outline-style: solid;
+    outline-style: none;
             outline-width: 1px;
             outline-offset: 1px;
             outline-color: $tb-figma-primary-dark;
@@ -14829,6 +14845,9 @@
             border-left-color: $tb-figma-primary-dark !important;
             border-right-color: $tb-figma-primary-dark !important;
             border-top-color: $tb-figma-primary-dark !important;
+            background-color: $tb-figma-primary-light-2 !important;
+            background-image: none !important;
+            color: $tb-figma-primary-dark;
         
 }
     .w-dialog-status.k-dialog-wrapper .k-window.k-dialog .k-window-titlebar.k-dialog-titlebar{
@@ -14920,8 +14939,6 @@
 }
     .k-chip.k-chip-outline.k-selected .k-chip-content{
     color: $tb-figma-background;
-            background-color: $tb-figma-primary;
-            background-image: none;
         
 }
     .k-pager .k-pager-numbers-wrap .k-pager-numbers .k-button.k-button-flat.k-button-flat-primary.k-selected .k-button-text{
@@ -14950,22 +14967,21 @@
         
 }
     .w-dialog-status.k-dialog-wrapper .k-window.k-dialog .k-window-titlebar.k-dialog-titlebar .k-window-titlebar-actions.k-dialog-titlebar-actions .k-window-titlebar-action.k-dialog-titlebar-action.k-button.k-button-md.k-button-flat.k-button-flat-base.k-rounded-md.k-icon-button.k-active,.w-dialog-status.k-dialog-wrapper .k-window.k-dialog .k-window-titlebar.k-dialog-titlebar .k-window-titlebar-actions.k-dialog-titlebar-actions .k-window-titlebar-action.k-dialog-titlebar-action.k-button.k-button-md.k-button-flat.k-button-flat-base.k-rounded-md.k-icon-button.k-state-active,.w-dialog-status.k-dialog-wrapper .k-window.k-dialog .k-window-titlebar.k-dialog-titlebar .k-window-titlebar-actions.k-dialog-titlebar-actions .k-window-titlebar-action.k-dialog-titlebar-action.k-button.k-button-md.k-button-flat.k-button-flat-base.k-rounded-md.k-icon-button:active{
-    background-color: initial !important;
+    background-color: $tb-figma-primary-light !important;
             background-image: none !important;
             border-bottom-color: $tb-notification-text !important;
             border-left-color: $tb-notification-text !important;
             border-right-color: $tb-notification-text !important;
             border-top-color: $tb-notification-text !important;
+            color: $tb-notification-text;
         
 }
     .w-dialog-status.k-dialog-wrapper .k-window.k-dialog .k-window-titlebar.k-dialog-titlebar .k-window-titlebar-actions.k-dialog-titlebar-actions .k-window-titlebar-action.k-dialog-titlebar-action.k-button.k-button-md.k-button-flat.k-button-flat-base.k-rounded-md.k-icon-button.k-focus,.w-dialog-status.k-dialog-wrapper .k-window.k-dialog .k-window-titlebar.k-dialog-titlebar .k-window-titlebar-actions.k-dialog-titlebar-actions .k-window-titlebar-action.k-dialog-titlebar-action.k-button.k-button-md.k-button-flat.k-button-flat-base.k-rounded-md.k-icon-button.k-state-focus,.w-dialog-status.k-dialog-wrapper .k-window.k-dialog .k-window-titlebar.k-dialog-titlebar .k-window-titlebar-actions.k-dialog-titlebar-actions .k-window-titlebar-action.k-dialog-titlebar-action.k-button.k-button-md.k-button-flat.k-button-flat-base.k-rounded-md.k-icon-button.k-state-focused,.w-dialog-status.k-dialog-wrapper .k-window.k-dialog .k-window-titlebar.k-dialog-titlebar .k-window-titlebar-actions.k-dialog-titlebar-actions .k-window-titlebar-action.k-dialog-titlebar-action.k-button.k-button-md.k-button-flat.k-button-flat-base.k-rounded-md.k-icon-button:focus{
     outline-style: none;
-            border-bottom-color: $tb-notification-text !important;
-            border-left-color: $tb-notification-text !important;
-            border-right-color: $tb-notification-text !important;
-            border-top-color: $tb-notification-text !important;
-            background-color: initial !important;
-            background-image: none !important;
+            border-bottom-color: $tb-figma-primary-light !important;
+            border-left-color: $tb-figma-primary-light !important;
+            border-right-color: $tb-figma-primary-light !important;
+            border-top-color: $tb-figma-primary-light !important;
         
 }
     .w-calendar-inline.k-calendar.k-calendar-range{
@@ -15019,25 +15035,24 @@
         
 }
     .k-chip.k-chip-outline .k-chip-content{
-    padding-right: 10px;
-            padding-left: 10px;
-            border-bottom-width: 1px;
+    border-bottom-width: 1px;
             border-left-width: 1px;
             border-right-width: 1px;
             border-top-width: 1px;
             border-bottom-color: $tb-figma-primary;
-            border-bottom-style: solid;
+            border-bottom-style: none;
             border-left-color: $tb-figma-primary;
-            border-left-style: solid;
+            border-left-style: none;
             border-right-color: $tb-figma-primary;
-            border-right-style: solid;
+            border-right-style: none;
             border-top-color: $tb-figma-primary;
-            border-top-style: solid;
-            border-bottom-left-radius: 5px;
-            border-bottom-right-radius: 5px;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
-            color: $tb-figma-primary;
+            border-top-style: none;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+            padding-right: 5px;
+            padding-left: 5px;
         
 }
     .k-button-group .k-button.k-button-flat .k-button-icon.k-icon.k-font-icon{
@@ -15247,5 +15262,37 @@
 }
     .k-button.k-disabled.k-button-solid-primary .k-button-icon.k-icon.k-font-icon,.k-button.k-state-disabled.k-button-solid-primary .k-button-icon.k-icon.k-font-icon,.k-button:disabled.k-button-solid-primary .k-button-icon.k-icon.k-font-icon{
     color: $tb-figma-neutral-light-2;
+        
+}
+    .k-chip.k-chip-outline .k-chip-actions{
+    margin-right: 0px;
+        
+}
+    .k-chip.k-chip-outline.k-focus .k-icon.k-font-icon.k-chip-icon,.k-chip.k-chip-outline.k-state-focus .k-icon.k-font-icon.k-chip-icon,.k-chip.k-chip-outline.k-state-focused .k-icon.k-font-icon.k-chip-icon,.k-chip.k-chip-outline:focus .k-icon.k-font-icon.k-chip-icon{
+    color: $tb-figma-background;
+        
+}
+    .k-dialog-wrapper .k-window.k-dialog .k-window-titlebar.k-dialog-titlebar .k-window-titlebar-actions.k-dialog-titlebar-actions .k-window-titlebar-action.k-dialog-titlebar-action.k-button.k-button-md.k-button-flat.k-button-flat-base.k-rounded-md.k-icon-button.k-hover .k-button-icon.k-icon.k-font-icon.k-i-x,.k-dialog-wrapper .k-window.k-dialog .k-window-titlebar.k-dialog-titlebar .k-window-titlebar-actions.k-dialog-titlebar-actions .k-window-titlebar-action.k-dialog-titlebar-action.k-button.k-button-md.k-button-flat.k-button-flat-base.k-rounded-md.k-icon-button.k-state-hover .k-button-icon.k-icon.k-font-icon.k-i-x,.k-dialog-wrapper .k-window.k-dialog .k-window-titlebar.k-dialog-titlebar .k-window-titlebar-actions.k-dialog-titlebar-actions .k-window-titlebar-action.k-dialog-titlebar-action.k-button.k-button-md.k-button-flat.k-button-flat-base.k-rounded-md.k-icon-button.k-state-hovered .k-button-icon.k-icon.k-font-icon.k-i-x,.k-dialog-wrapper .k-window.k-dialog .k-window-titlebar.k-dialog-titlebar .k-window-titlebar-actions.k-dialog-titlebar-actions .k-window-titlebar-action.k-dialog-titlebar-action.k-button.k-button-md.k-button-flat.k-button-flat-base.k-rounded-md.k-icon-button:hover .k-button-icon.k-icon.k-font-icon.k-i-x{
+    color: $tb-figma-primary-dark;
+        
+}
+    .k-dialog-wrapper .k-window.k-dialog .k-window-titlebar.k-dialog-titlebar .k-window-titlebar-actions.k-dialog-titlebar-actions .k-window-titlebar-action.k-dialog-titlebar-action.k-button.k-button-md.k-button-flat.k-button-flat-base.k-rounded-md.k-icon-button.k-active,.k-dialog-wrapper .k-window.k-dialog .k-window-titlebar.k-dialog-titlebar .k-window-titlebar-actions.k-dialog-titlebar-actions .k-window-titlebar-action.k-dialog-titlebar-action.k-button.k-button-md.k-button-flat.k-button-flat-base.k-rounded-md.k-icon-button.k-state-active,.k-dialog-wrapper .k-window.k-dialog .k-window-titlebar.k-dialog-titlebar .k-window-titlebar-actions.k-dialog-titlebar-actions .k-window-titlebar-action.k-dialog-titlebar-action.k-button.k-button-md.k-button-flat.k-button-flat-base.k-rounded-md.k-icon-button:active{
+    color: $tb-figma-neutral-dark-2;
+            border-bottom-color: $tb-figma-neutral-dark-2 !important;
+            border-left-color: $tb-figma-neutral-dark-2 !important;
+            border-right-color: $tb-figma-neutral-dark-2 !important;
+            border-top-color: $tb-figma-neutral-dark-2 !important;
+        
+}
+    .k-dialog-wrapper .k-window.k-dialog .k-window-titlebar.k-dialog-titlebar .k-window-titlebar-actions.k-dialog-titlebar-actions .k-window-titlebar-action.k-dialog-titlebar-action.k-button.k-button-md.k-button-flat.k-button-flat-base.k-rounded-md.k-icon-button.k-active .k-button-icon.k-icon.k-font-icon.k-i-x,.k-dialog-wrapper .k-window.k-dialog .k-window-titlebar.k-dialog-titlebar .k-window-titlebar-actions.k-dialog-titlebar-actions .k-window-titlebar-action.k-dialog-titlebar-action.k-button.k-button-md.k-button-flat.k-button-flat-base.k-rounded-md.k-icon-button.k-state-active .k-button-icon.k-icon.k-font-icon.k-i-x,.k-dialog-wrapper .k-window.k-dialog .k-window-titlebar.k-dialog-titlebar .k-window-titlebar-actions.k-dialog-titlebar-actions .k-window-titlebar-action.k-dialog-titlebar-action.k-button.k-button-md.k-button-flat.k-button-flat-base.k-rounded-md.k-icon-button:active .k-button-icon.k-icon.k-font-icon.k-i-x{
+    color: $tb-figma-neutral-dark-2;
+        
+}
+    .k-dialog-wrapper .k-window.k-dialog .k-window-titlebar.k-dialog-titlebar .k-window-titlebar-actions.k-dialog-titlebar-actions .k-window-titlebar-action.k-dialog-titlebar-action.k-button.k-button-md.k-button-flat.k-button-flat-base.k-rounded-md.k-icon-button.k-focus,.k-dialog-wrapper .k-window.k-dialog .k-window-titlebar.k-dialog-titlebar .k-window-titlebar-actions.k-dialog-titlebar-actions .k-window-titlebar-action.k-dialog-titlebar-action.k-button.k-button-md.k-button-flat.k-button-flat-base.k-rounded-md.k-icon-button.k-state-focus,.k-dialog-wrapper .k-window.k-dialog .k-window-titlebar.k-dialog-titlebar .k-window-titlebar-actions.k-dialog-titlebar-actions .k-window-titlebar-action.k-dialog-titlebar-action.k-button.k-button-md.k-button-flat.k-button-flat-base.k-rounded-md.k-icon-button.k-state-focused,.k-dialog-wrapper .k-window.k-dialog .k-window-titlebar.k-dialog-titlebar .k-window-titlebar-actions.k-dialog-titlebar-actions .k-window-titlebar-action.k-dialog-titlebar-action.k-button.k-button-md.k-button-flat.k-button-flat-base.k-rounded-md.k-icon-button:focus{
+    border-bottom-color: $tb-figma-primary-light !important;
+            border-left-color: $tb-figma-primary-light !important;
+            border-right-color: $tb-figma-primary-light !important;
+            border-top-color: $tb-figma-primary-light !important;
+            outline-style: none;
         
 }

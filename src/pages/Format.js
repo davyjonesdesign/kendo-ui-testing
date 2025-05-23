@@ -7,6 +7,8 @@ const Format = () => {
       <nav>
         <Link to="/">Home</Link>
         <Link to="/buttons">Buttons</Link>
+        <Link to="/chips">Chips</Link>
+
         <Link to="/w-calendar-inline">w-calendar-inline</Link>
         <Link to="/dialogs">Dialogs</Link>
         <Link to="/inputs">Inputs</Link>

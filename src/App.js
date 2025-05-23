@@ -3,6 +3,7 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Format from "./pages/Format";
 import Buttons from "./pages/Buttons";
+import Chips from "./pages/Chips";
 import CalendarInline from "./pages/w-calendar-inline";
 import Inputs from "./pages/Inputs";
 import TabStrips from "./pages/TabStrips";
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" element={<Format />}>
           <Route index element={<Home />} />
           <Route path="buttons" element={<Buttons />} />
+          <Route path="chips" element={<Chips />} />
           <Route path="w-calendar-inline" element={<CalendarInline />} />
           <Route path="inputs" element={<Inputs />} />
           <Route path="tabstrip" element={<TabStrips />} />

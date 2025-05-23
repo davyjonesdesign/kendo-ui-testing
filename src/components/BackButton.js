@@ -7,17 +7,19 @@ const BackButton = () => {
   const navigate = useNavigate();
 
   return (
-    <Button
-      icon="border-style"
-      onClick={() => navigate(-1)}
-      themeColor="primary"
-      rounded="full"
-      fillMode="link"
-      size="large"
-      className="w-back-button"
-    >
-      Back
-    </Button>
+    <div className='header-btn back-btn'>
+      <Button
+        icon="border-style"
+        onClick={() => navigate(-1)}
+        themeColor="primary"
+        rounded="full"
+        fillMode="link"
+        size="large"
+        className="w-back-button"
+      >
+        Back
+      </Button>
+    </div>
   );
 };
 

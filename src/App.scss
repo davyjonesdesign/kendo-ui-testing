@@ -20,6 +20,13 @@
     h2, p {
       margin-bottom: 0;
     }
+    .header-btn {
+      min-width: 150px;
+    }
+    .doc-btn {
+      display: flex;
+      justify-content: flex-end;
+    }
   }
   section {
     width: calc(100% - 40px);
