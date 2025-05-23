@@ -10,6 +10,6 @@ Amit.Bhatia@wheels.com
 
 ### `code`
 
-Open [Wheels Kendo UI Testing Site](https://davyjonesdesign.github.io/kendo-ui-testing/#/chips) to view it in your browser.
+Open [Wheels Kendo UI Testing Site](https://davyjonesdesign.github.io/kendo-ui-testing) to view it in your browser.
 
 
