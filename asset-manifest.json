@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kendo-ui-testing/static/css/main.4b84ced4.css",
-    "main.js": "/kendo-ui-testing/static/js/main.c3e8532d.js",
+    "main.css": "/kendo-ui-testing/static/css/main.9dab5f35.css",
+    "main.js": "/kendo-ui-testing/static/js/main.28f30252.js",
     "static/js/488.90131834.chunk.js": "/kendo-ui-testing/static/js/488.90131834.chunk.js",
     "static/media/kendo-font-icons.ttf": "/kendo-ui-testing/static/media/kendo-font-icons.eb7546dfb02a26b60537.ttf",
     "static/media/Inter-ExtraBoldItalic.woff2": "/kendo-ui-testing/static/media/Inter-ExtraBoldItalic.484f10179d33fa2992d9.woff2",
@@ -24,12 +24,12 @@
     "static/media/Inter-Thin.woff2": "/kendo-ui-testing/static/media/Inter-Thin.330d40f9d3469c8e913e.woff2",
     "static/media/DesignIconsFont_1.woff": "/kendo-ui-testing/static/media/DesignIconsFont_1.80ad94507a4032fad89e.woff",
     "index.html": "/kendo-ui-testing/index.html",
-    "main.4b84ced4.css.map": "/kendo-ui-testing/static/css/main.4b84ced4.css.map",
-    "main.c3e8532d.js.map": "/kendo-ui-testing/static/js/main.c3e8532d.js.map",
+    "main.9dab5f35.css.map": "/kendo-ui-testing/static/css/main.9dab5f35.css.map",
+    "main.28f30252.js.map": "/kendo-ui-testing/static/js/main.28f30252.js.map",
     "488.90131834.chunk.js.map": "/kendo-ui-testing/static/js/488.90131834.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b84ced4.css",
-    "static/js/main.c3e8532d.js"
+    "static/css/main.9dab5f35.css",
+    "static/js/main.28f30252.js"
   ]
 }
