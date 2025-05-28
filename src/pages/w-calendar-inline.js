@@ -9,11 +9,12 @@ import CodeViewer from '../components/CodeViewer';
 const CalendarInline = () => {
   return (
       <div className="page-wrapper">
-    
-        <div className="page-header">
-          <BackButton />
-          <h2>w-calendar-inline</h2>
-          <DocumentationButton rl="https://www.telerik.com/kendo-react-ui/components/buttons/" />
+        <div className='head-wrapper'>
+          <div className="page-header">
+            <BackButton />
+            <h2>w-calendar-inline</h2>
+            <DocumentationButton rl="https://www.telerik.com/kendo-react-ui/components/buttons/" />
+          </div>
         </div>
 
 

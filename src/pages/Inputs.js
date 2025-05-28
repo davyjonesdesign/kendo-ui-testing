@@ -39,10 +39,13 @@ const Inputs = () => {
     }, []);
     return (
         <div className="page-wrapper">
-            <div className="page-header">
-                <BackButton />
-                <h2>Inputs</h2>
-                <DocumentationButton rl="https://www.telerik.com/kendo-react-ui/components/inputs" />
+            <div className='head-wrapper'>
+
+                <div className="page-header">
+                    <BackButton />
+                    <h2>Inputs</h2>
+                    <DocumentationButton rl="https://www.telerik.com/kendo-react-ui/components/inputs" />
+                </div>
             </div>
 
             <section>

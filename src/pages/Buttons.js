@@ -8,11 +8,13 @@ const Buttons = () => {
 
   return (
     <div className="page-wrapper">
-      <div className="page-header">
+      <div className='head-wrapper'>
+        <div className="page-header">
           <BackButton />
           <h2>Buttons</h2>
           <DocumentationButton rl="https://www.telerik.com/kendo-react-ui/components/buttons" />
         </div>
+      </div>
       
       <section>
         <h3>Button</h3>

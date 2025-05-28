@@ -7,10 +7,12 @@ const Custom = () => {
 
   return (
     <div className="page-wrapper">
-        <div className="page-header">
-          <BackButton />
-          <h2>Custom Components</h2>
-          <DocumentationButton rl="https://docs.telerik.com/themebuilder/using-exported-styles/exported-package#using-the-custom-components-output" />
+        <div className='head-wrapper'>
+            <div className="page-header">
+            <BackButton />
+            <h2>Custom Components</h2>
+            <DocumentationButton rl="https://docs.telerik.com/themebuilder/using-exported-styles/exported-package#using-the-custom-components-output" />
+            </div>
         </div>
           
         <section>

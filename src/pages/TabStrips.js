@@ -12,10 +12,13 @@ const TabStrips = () => {
         <div className="page-wrapper">
             
             
-            <div className="page-header">
-                <BackButton />
-                <h2>TabStrip</h2>
-                <DocumentationButton rl="https://www.telerik.com/kendo-react-ui/components/layout/tabstrip" />
+            <div className='head-wrapper'>
+
+                <div className="page-header">
+                    <BackButton />
+                    <h2>TabStrip</h2>
+                    <DocumentationButton rl="https://www.telerik.com/kendo-react-ui/components/layout/tabstrip" />
+                </div>
             </div>
             <section>
                 <TabStrip selected={selected} onSelect={handleSelect}>

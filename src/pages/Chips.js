@@ -35,11 +35,12 @@ const Chips = () => {
 
   return (
       <div className="page-wrapper">
-    
-        <div className="page-header">
-          <BackButton />
-          <h2>Chips</h2>
-          <DocumentationButton rl="https://www.telerik.com/kendo-react-ui/components/buttons/chip" />
+        <div className='head-wrapper'>
+          <div className="page-header">
+            <BackButton />
+            <h2>Chips</h2>
+            <DocumentationButton rl="https://www.telerik.com/kendo-react-ui/components/buttons/chip" />
+          </div>
         </div>
 
 

@@ -23,10 +23,12 @@ const Dialogs = () => {
   
   return (
     <div className="page-wrapper">
-      <div className="page-header">
-        <BackButton />
-        <h2>Dialogs</h2>
-        <DocumentationButton rl="https://www.telerik.com/kendo-react-ui/components/dialogs" />
+      <div className='head-wrapper'>
+        <div className="page-header">
+          <BackButton />
+          <h2>Dialogs</h2>
+          <DocumentationButton rl="https://www.telerik.com/kendo-react-ui/components/dialogs" />
+        </div>
       </div>
 
       <section>

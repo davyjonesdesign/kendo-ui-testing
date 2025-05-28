@@ -130,11 +130,11 @@ p.strong {
 }
 
 nav {
-    padding: 20px;
-    background: #131D29;
     display: flex;
     flex-direction: row;
     gap: 20px;
+    max-width: 1600px;
+    margin: 0 auto;
     a {
         padding: 5px 10px;
         text-decoration: none;
@@ -148,6 +148,12 @@ nav {
             background-color: #1D3A63;
         }
     }
+}
+
+.nav-wrapper {
+    background: #131D29;
+    width: calc(100% - 40px);
+    padding: 20px;
 }
 
 main {

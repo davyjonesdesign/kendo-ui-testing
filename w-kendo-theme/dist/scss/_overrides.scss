@@ -7715,7 +7715,7 @@
     padding-top: 0px;
             padding-right: 0px;
             padding-left: 0px;
-            padding-bottom: 0px;
+            padding-bottom: 10px;
         
 }
     .k-card .k-card-header{
@@ -7735,7 +7735,7 @@
             border-top-color: $tb-kendo-card-header-border;
             border-top-style: none;
             border-top-width: 0px;
-            margin-bottom: 20px;
+            margin-bottom: 0px;
         
 }
     .k-card{
@@ -7758,16 +7758,19 @@
             border-bottom-right-radius: $tb-figma-border-radius-20;
             border-top-left-radius: $tb-figma-border-radius-20;
             border-top-right-radius: $tb-figma-border-radius-20;
+            row-gap: 20px;
         
 }
     .k-card .k-actions.k-card-actions{
                     @extend %tb-typography-fig-h5-medium;
-          padding-top: $tb-figma-spacing-20;
+          padding-top: 0px;
             padding-right: 0px;
             padding-bottom: 0px;
             padding-left: 0px;
             row-gap: 10px;
             column-gap: 10px;
+            overflow-x: visible;
+            overflow-y: visible;
         
 }
     .k-calendar.k-calendar-range.k-calendar-md .k-calendar-view.k-calendar-monthview .k-calendar-table .k-calendar-td.k-other-month.k-selected{
@@ -8254,6 +8257,8 @@
     .k-card .k-actions.k-card-actions.k-actions-start{
     overflow-x: visible;
             overflow-y: visible;
+            column-gap: 20px;
+            row-gap: 20px;
         
 }
     .k-multiselecttree-popup .k-treeview .k-treeview-group .k-treeview-item .k-treeview-leaf{
@@ -14999,11 +15004,6 @@
 }
     .k-card.k-card-horizontal.w-block-link-horizontal .w-icon-wrapper{
     height: 60px;
-        
-}
-    .k-card.k-card-horizontal.w-block-link-horizontal .w-trailing-icon-wrapper{
-    height: 60px;
-            min-width: 30px;
         
 }
     .w-dialog-status.k-dialog-wrapper .k-window.k-dialog{
